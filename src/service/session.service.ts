@@ -11,3 +11,6 @@ export async function createSession(userId: string, userAgent: string) {
   return session.toJSON();
 }
 
+export async function findSessions(query: FilterQuery<SessionDocument>) {
+    return SessionModel.find(query).lean();
+  }
