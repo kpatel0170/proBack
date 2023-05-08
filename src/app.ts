@@ -1,23 +1,17 @@
-import express from 'express';
+import express from "express";
 import dotenv from "dotenv";
 dotenv.config();
 import config from "config";
 import connect from "./utils/connect";
 import logger from "./utils/logger";
-import routes from "./routes";
-import deserializeUser from "./middleware/deserializeUser";
-
-
-
-const app = express();
-app.use(express.json());
-
-app.use(deserializeUser);
+import createServer from "./utils/server";
 
 const port = config.get<number>("port");
+
+const app = createServer();
+
 app.listen(port, async () => {
-    logger.info(`Server listening on port ${port}`);
-   
-    await connect();
-    routes(app);
+  logger.info(`App is running at ${port}`);
+
+  await connect();
 });
