@@ -8,6 +8,7 @@ import logger from "./utils/logger";
 import routes from "./routes";
 import deserializeUser from "./middleware/deserializeUser";
 import { restResponseTimeHistogram, startMetricsServer } from "./utils/metrics";
+import swaggerDocs from "./utils/swagger";
 
 
 
@@ -38,4 +39,6 @@ app.listen(port, async () => {
     await connect();
     routes(app);
     startMetricsServer();
+
+    swaggerDocs(app, port);
 });

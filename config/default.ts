@@ -1,5 +1,5 @@
 export default {
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 5000,
     MetricsPORT: process.env.METRICS_PORT || 1901,
     dbUri: process.env.DB_URI,
     saltWorkFactor: parseInt(process.env.SALT_WORK_FACTOR),
