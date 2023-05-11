@@ -87,4 +87,4 @@ Below is the directory structure of the project:
  **Kartik Patel** - [@kpatel0170](https://github.com/kpatel0170)
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
