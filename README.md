@@ -74,14 +74,19 @@ Below is the directory structure of the project:
 └── tsconfig.json
 ```
 
-
-
 ## Data flow
 ![](./diagrams/data-flow.png)
 
 
 ## Access & refresh token flow
 ![](./diagrams/refresh-token-flow.png)
+
+## Contributing
+
+We welcome contributions to the project. To contribute, follow these steps:
+1. Fork the repository.
+2. Create a new branch for your feature: `git checkout -b new-feature`.
+3. Make the changes to the codebase
 
 ## Authors
  **Kartik Patel** - [@kpatel0170](https://github.com/kpatel0170)
